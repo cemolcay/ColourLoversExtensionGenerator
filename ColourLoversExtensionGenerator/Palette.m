@@ -38,8 +38,8 @@
 
 
 - (NSString *)generateUIColorExtension {
-    NSString *interface = @"\n@interface NSColor (Palette)";
-    NSString *implementation = @"@implementation NSColor (Palette)";
+    NSString *interface = [NSString stringWithFormat:@"\n@interface NSColor (%@)", [self.paletteName stringByReplacingOccurrencesOfString:@" " withString:@""]];
+    NSString *implementation = [NSString stringWithFormat:@"@implementation NSColor (%@)", [self.paletteName stringByReplacingOccurrencesOfString:@" " withString:@""]];
     NSString *h = @"";
     NSString *m = @"";
     
