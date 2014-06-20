@@ -50,3 +50,12 @@ you can copy the extension to your clipboard and you get the extension
 ```
 
 thats all !
+
+
+Credits
+=======
+AXStatusItemPopup
+https://github.com/aschuch/AXStatusItemPopup
+
+colourlovers.com api
+http://www.colourlovers.com/api
