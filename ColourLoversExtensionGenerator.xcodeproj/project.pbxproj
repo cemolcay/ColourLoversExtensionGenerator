@@ -18,6 +18,11 @@
 		B284030119536A3C00FEFAEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28402E019536A3B00FEFAEF /* Cocoa.framework */; };
 		B284030919536A3C00FEFAEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B284030719536A3C00FEFAEF /* InfoPlist.strings */; };
 		B284030B19536A3C00FEFAEF /* ColourLoversExtensionGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B284030A19536A3C00FEFAEF /* ColourLoversExtensionGeneratorTests.m */; };
+		B284031819536D5000FEFAEF /* AXStatusItemPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = B284031619536D5000FEFAEF /* AXStatusItemPopup.m */; };
+		B284031919536D5000FEFAEF /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = B284031719536D5000FEFAEF /* favicon.ico */; };
+		B284031D19536DEA00FEFAEF /* ProducerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B284031B19536DEA00FEFAEF /* ProducerViewController.m */; };
+		B284031E19536DEA00FEFAEF /* ProducerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B284031C19536DEA00FEFAEF /* ProducerViewController.xib */; };
+		B28403211953759100FEFAEF /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B28403201953759100FEFAEF /* NSWindow+canBecomeKeyWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,14 @@
 		B284030619536A3C00FEFAEF /* ColourLoversExtensionGeneratorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColourLoversExtensionGeneratorTests-Info.plist"; sourceTree = "<group>"; };
 		B284030819536A3C00FEFAEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B284030A19536A3C00FEFAEF /* ColourLoversExtensionGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColourLoversExtensionGeneratorTests.m; sourceTree = "<group>"; };
+		B284031519536D5000FEFAEF /* AXStatusItemPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXStatusItemPopup.h; sourceTree = "<group>"; };
+		B284031619536D5000FEFAEF /* AXStatusItemPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXStatusItemPopup.m; sourceTree = "<group>"; };
+		B284031719536D5000FEFAEF /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		B284031A19536DEA00FEFAEF /* ProducerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducerViewController.h; sourceTree = "<group>"; };
+		B284031B19536DEA00FEFAEF /* ProducerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProducerViewController.m; sourceTree = "<group>"; };
+		B284031C19536DEA00FEFAEF /* ProducerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProducerViewController.xib; sourceTree = "<group>"; };
+		B284031F1953759100FEFAEF /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
+		B28403201953759100FEFAEF /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +128,16 @@
 		B28402E619536A3B00FEFAEF /* ColourLoversExtensionGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				B284031419536D5000FEFAEF /* AXStatusItemPopup */,
+				B284031719536D5000FEFAEF /* favicon.ico */,
 				B28402F219536A3B00FEFAEF /* AppDelegate.h */,
 				B28402F319536A3B00FEFAEF /* AppDelegate.m */,
 				B28402F519536A3B00FEFAEF /* MainMenu.xib */,
 				B28402F819536A3B00FEFAEF /* Images.xcassets */,
 				B28402E719536A3B00FEFAEF /* Supporting Files */,
+				B284031A19536DEA00FEFAEF /* ProducerViewController.h */,
+				B284031B19536DEA00FEFAEF /* ProducerViewController.m */,
+				B284031C19536DEA00FEFAEF /* ProducerViewController.xib */,
 			);
 			path = ColourLoversExtensionGenerator;
 			sourceTree = "<group>";
@@ -152,6 +170,17 @@
 				B284030719536A3C00FEFAEF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B284031419536D5000FEFAEF /* AXStatusItemPopup */ = {
+			isa = PBXGroup;
+			children = (
+				B284031F1953759100FEFAEF /* NSWindow+canBecomeKeyWindow.h */,
+				B28403201953759100FEFAEF /* NSWindow+canBecomeKeyWindow.m */,
+				B284031519536D5000FEFAEF /* AXStatusItemPopup.h */,
+				B284031619536D5000FEFAEF /* AXStatusItemPopup.m */,
+			);
+			path = AXStatusItemPopup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B284031E19536DEA00FEFAEF /* ProducerViewController.xib in Resources */,
 				B28402EB19536A3B00FEFAEF /* InfoPlist.strings in Resources */,
 				B28402F919536A3B00FEFAEF /* Images.xcassets in Resources */,
 				B28402F119536A3B00FEFAEF /* Credits.rtf in Resources */,
 				B28402F719536A3B00FEFAEF /* MainMenu.xib in Resources */,
+				B284031919536D5000FEFAEF /* favicon.ico in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28402F419536A3B00FEFAEF /* AppDelegate.m in Sources */,
+				B28403211953759100FEFAEF /* NSWindow+canBecomeKeyWindow.m in Sources */,
+				B284031819536D5000FEFAEF /* AXStatusItemPopup.m in Sources */,
+				B284031D19536DEA00FEFAEF /* ProducerViewController.m in Sources */,
 				B28402ED19536A3B00FEFAEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "ProducerViewController.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    ProducerViewController *producer = [[ProducerViewController alloc] initWithNibName:@"ProducerViewController" bundle:nil];
+    self.popUp = [[AXStatusItemPopup alloc] initWithViewController:producer image:[NSImage imageNamed:@"favicon.ico"] alternateImage:[NSImage imageNamed:@"favicon.ico"]];
 }
 
 @end
