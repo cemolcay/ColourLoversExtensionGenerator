@@ -7,16 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Palette.h"
 
-@interface ProducerViewController : NSViewController
+@interface ProducerViewController : NSViewController <NSTextFieldDelegate>
 
-@property (strong) NSString *paletteId;
-
-@property (strong) NSString *name;
-@property (strong) NSArray *colors;
+@property (strong) Palette *palette;
 
 @property (strong) IBOutlet NSTextField *txtPaletteId;
 @property (strong) IBOutlet NSButton *btnGo;
+
+@property (strong) NSView *resultView;
 
 - (IBAction)goButonPressed:(id)sender;
 

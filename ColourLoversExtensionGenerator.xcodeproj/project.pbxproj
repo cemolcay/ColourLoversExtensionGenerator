@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2396EED19545CC600A93CAB /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = B2396EEC19545CC600A93CAB /* Colour.m */; };
+		B2396EF019545CCF00A93CAB /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = B2396EEF19545CCF00A93CAB /* Palette.m */; };
 		B28402E119536A3B00FEFAEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28402E019536A3B00FEFAEF /* Cocoa.framework */; };
 		B28402EB19536A3B00FEFAEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B28402E919536A3B00FEFAEF /* InfoPlist.strings */; };
 		B28402ED19536A3B00FEFAEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28402EC19536A3B00FEFAEF /* main.m */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2396EEB19545CC600A93CAB /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		B2396EEC19545CC600A93CAB /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		B2396EEE19545CCF00A93CAB /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		B2396EEF19545CCF00A93CAB /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
 		B28402DD19536A3B00FEFAEF /* ColourLoversExtensionGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourLoversExtensionGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28402E019536A3B00FEFAEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B28402E319536A3B00FEFAEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +144,10 @@
 				B284031A19536DEA00FEFAEF /* ProducerViewController.h */,
 				B284031B19536DEA00FEFAEF /* ProducerViewController.m */,
 				B284031C19536DEA00FEFAEF /* ProducerViewController.xib */,
+				B2396EEB19545CC600A93CAB /* Colour.h */,
+				B2396EEC19545CC600A93CAB /* Colour.m */,
+				B2396EEE19545CCF00A93CAB /* Palette.h */,
+				B2396EEF19545CCF00A93CAB /* Palette.m */,
 			);
 			path = ColourLoversExtensionGenerator;
 			sourceTree = "<group>";
@@ -288,6 +298,8 @@
 				B284031819536D5000FEFAEF /* AXStatusItemPopup.m in Sources */,
 				B284031D19536DEA00FEFAEF /* ProducerViewController.m in Sources */,
 				B28402ED19536A3B00FEFAEF /* main.m in Sources */,
+				B2396EF019545CCF00A93CAB /* Palette.m in Sources */,
+				B2396EED19545CC600A93CAB /* Colour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +512,7 @@
 				B284031019536A3C00FEFAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B284031119536A3C00FEFAEF /* Build configuration list for PBXNativeTarget "ColourLoversExtensionGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +521,7 @@
 				B284031319536A3C00FEFAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
