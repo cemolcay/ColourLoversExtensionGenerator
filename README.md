@@ -5,9 +5,9 @@ a status bar app for generating UIColor extension class form colourlovers.com pa
 
 ![alt tag](https://raw.githubusercontent.com/cemolcay/ColourLoversExtensionGenerator/master/ss1.png)
 
-first get the palette id from palette url
-  http://www.colourlovers.com/palette/3394794/Melba_Toast
-where id is 3394749
+first get the palette id from palette url <br>
+  http://www.colourlovers.com/palette/3394794/Melba_Toast <br>
+where id is 3394749 <br>
 than press GO.
 
 ![alt tag](https://raw.githubusercontent.com/cemolcay/ColourLoversExtensionGenerator/master/ss2.png)
