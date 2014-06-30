@@ -11,7 +11,8 @@
 #import "Colour.h"
 
 @interface ProducerViewController ()
-
+@property (strong) NSPopUpButton *languageCombo;
+@property (strong) NSPopUpButton *classCombo;
 @end
 
 @implementation ProducerViewController
@@ -40,6 +41,7 @@
     
     CGFloat padding = 10;
     CGFloat butH = 20;
+    CGFloat comboH = 24;
     CGFloat vH = 80;
     CGFloat h = padding * (4 + (self.palette.colours.count-1)) + 2*butH + self.palette.colours.count*vH;
     
@@ -49,6 +51,22 @@
     for (int i = 0; i < self.palette.colours.count; i++) {
         [self.resultView addSubview:[self viewWithColour:[self.palette.colours objectAtIndex:i] tag:i]];
     }
+    
+    
+    NSPopUpButton *languageCombo = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(10, 0, self.view.frame.size.width-40, comboH)];
+    [languageCombo addItemsWithTitles:@[@"Objective-C", @"Swift"]];
+    [[languageCombo itemAtIndex:0] setTag:0];
+    [[languageCombo itemAtIndex:1] setTag:1];
+    self.languageCombo = languageCombo;
+    [self.resultView addSubview:languageCombo];
+
+    
+    NSPopUpButton *classCombo = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(10, 0, languageCombo.frame.size.width, comboH)];
+    [classCombo addItemsWithTitles:@[@"UIColor", @"NSColor"]];
+    [[classCombo itemAtIndex:0] setTag:0];
+    [[classCombo itemAtIndex:1] setTag:1];
+    self.classCombo = classCombo;
+    [self.resultView addSubview:classCombo];
     
     NSButton *get = [[NSButton alloc] initWithFrame:NSMakeRect(10, 0, self.view.frame.size.width-40, butH)];
     [get setTitle:@"copy to clipboard"];
@@ -122,7 +140,10 @@
 
 
 - (void)copyPressed:(id)sender {
-    [self copyToClipboard:[self.palette generateClass:ExtensionClassUIColor andLanguage:LanguageSwift]];
+    NSInteger c = self.classCombo.selectedTag;
+    NSInteger l = self.languageCombo.selectedTag;
+    
+    [self copyToClipboard:[self.palette generateClass:c andLanguage:l]];
 }
 
 - (void)resetPressed:(id)sender {
@@ -172,5 +193,3 @@
 }
 
 @end
-
-
