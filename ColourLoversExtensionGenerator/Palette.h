@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, Language) {
+    LanguageObjectiveC,
+    LanguageSwift,
+};
+
+typedef NS_ENUM(NSUInteger, ExtensionClass) {
+    ExtensionClassUIColor,
+    ExtensionClassNSColor,
+    ExtensionClassCCColor,
+};
+
 @interface Palette : NSObject
 
 @property (nonatomic, strong) NSString *paletteId;
@@ -15,8 +26,6 @@
 @property (nonatomic, strong) NSArray *colours;
 
 - (id)initWithPaletteId:(NSString *)paletteId completed:(void(^)(void))completed;
-
-- (NSString *)generateUIColorExtension;
-- (void)copyToClipboard:(NSString *)string;
+- (NSString *)generateClass:(ExtensionClass)t andLanguage:(Language)lang;
 
 @end

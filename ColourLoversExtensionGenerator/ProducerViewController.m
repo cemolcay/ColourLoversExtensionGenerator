@@ -122,7 +122,7 @@
 
 
 - (void)copyPressed:(id)sender {
-    [self.palette copyToClipboard:[self.palette generateUIColorExtension]];
+    [self copyToClipboard:[self.palette generateClass:ExtensionClassUIColor andLanguage:LanguageSwift]];
 }
 
 - (void)resetPressed:(id)sender {
@@ -135,6 +135,14 @@
     [self.txtPaletteId setStringValue:@""];
     
     self.palette = nil;
+}
+
+
+- (void)copyToClipboard:(NSString *)string {
+    NSPasteboard *pb = [NSPasteboard generalPasteboard];
+    NSArray *types = [NSArray arrayWithObjects:NSStringPboardType, nil];
+    [pb declareTypes:types owner:self];
+    [pb setString:string forType:NSStringPboardType];
 }
 
 
