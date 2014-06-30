@@ -53,12 +53,6 @@
         
         else return @"error";
     }
-    else if (t == ExtensionClassCCColor) {
-        if (lang == LanguageObjectiveC)
-            return [self generateObjcCCColor];
-        
-        else return @"error";
-    }
     else return @"error";
 }
 
@@ -110,16 +104,6 @@
     return extension;
 }
 
-- (NSString *)generateObjcCCColor {
-    return @"";
-}
-
-
-//class func bb () -> UIColor! {
-//    return UIColor (red:1, green:1, blue:1, alpha:1)
-//}
-
-
 #pragma mark Swift
 - (NSString *)generateSwiftUIColor {
     NSString *start = @"\nextension UIColor {\n";
@@ -129,7 +113,7 @@
     for (int i = 0; i < self.colours.count; i++) {
         Colour *c = [self.colours objectAtIndex:i];
         NSString *name = c.name?c.name:[NSString stringWithFormat:@"color%d", i];
-        NSString *func = [NSString stringWithFormat:@"\tclass func %@ () -> UIColor! { \n\t\treturn UIColor (red:%1.f/255.0, green:%1.f/255.0, blue:%1.f/255.0, alpha:1)\n\t}\n\n", name, c.r, c.g, c.b];
+        NSString *func = [NSString stringWithFormat:@"\tclass func %@ () -> UIColor! { \n\n\t\treturn UIColor (red:%1.f/255.0, green:%1.f/255.0, blue:%1.f/255.0, alpha:1)\n\t}\n", name, c.r, c.g, c.b];
         
         ext = [ext stringByAppendingString:func];
     }

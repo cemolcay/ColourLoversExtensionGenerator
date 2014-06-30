@@ -16,7 +16,6 @@ typedef NS_ENUM(NSUInteger, Language) {
 typedef NS_ENUM(NSUInteger, ExtensionClass) {
     ExtensionClassUIColor,
     ExtensionClassNSColor,
-    ExtensionClassCCColor,
 };
 
 @interface Palette : NSObject
