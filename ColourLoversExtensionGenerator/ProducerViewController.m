@@ -43,7 +43,7 @@
     CGFloat butH = 20;
     CGFloat comboH = 24;
     CGFloat vH = 80;
-    CGFloat h = padding * (4 + (self.palette.colours.count-1)) + 2*butH + self.palette.colours.count*vH;
+    CGFloat h = padding * (6 + (self.palette.colours.count-1)) + 2*butH + 2*comboH + self.palette.colours.count*vH;
     
     [self setHeight:h];
     self.resultView = [[NSView alloc] initWithFrame:self.view.frame];
