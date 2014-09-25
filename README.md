@@ -1,7 +1,7 @@
 ColourLoversExtensionGenerator
 ==============================
 
-a status bar app for generating UIColor extension class form colourlovers.com palettes.
+a status bar app for generating UIColor/NSColor extension class in Objective-C or Swift form colourlovers.com palettes.
 
 ![alt tag](https://raw.githubusercontent.com/cemolcay/ColourLoversExtensionGenerator/master/ss1.png)
 
@@ -13,7 +13,8 @@ than press GO.
 ![alt tag](https://raw.githubusercontent.com/cemolcay/ColourLoversExtensionGenerator/master/ss2.png)
 
 palette is loaded
-you can copy the extension to your clipboard and you get the extension
+you can copy the extension to your clipboard and paste it to your project.
+you can name the colours as well.
 
 ```objective-c
 @interface NSColor (MelbaToast)
